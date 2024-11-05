@@ -23,3 +23,7 @@ section {
   margin: 24px;
   padding: 24px;
 }
+
+.exercise_answer {
+  color: yellow;
+}
