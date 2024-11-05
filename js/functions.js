@@ -3,7 +3,6 @@ let names = ["Alex", "Sam", "John", "Lucia", "Marco", "Kristina"];
 
 // Your code here
 
-
 // exercise 1
 // function exercise1() {
 //   console.log("Hi! My name is Alex");
@@ -59,7 +58,7 @@ let names = ["Alex", "Sam", "John", "Lucia", "Marco", "Kristina"];
 // addParagraph("exercise8", fullName("May"));
 // addParagraph("exercise8", fullName());
 
-// exercise 9 
+// exercise 9
 // names.forEach(name => console.log(name));
 
 // exercise 10 (run exercise 2 first)
@@ -69,13 +68,13 @@ let names = ["Alex", "Sam", "John", "Lucia", "Marco", "Kristina"];
 
 // exercise 11
 // exercise 12
-//  let addParagraph = (targetedID, text) => {
-//     let targetedDiv = document.getElementById(targetedID);
-//     let newParagraph = document.createElement("p");
-//     newParagraph.textContent = text;
-//     newParagraph.className = "answer_color";
-//     targetedDiv.appendChild(newParagraph);
-//   };
+let addParagraph = (targetedID, text) => {
+  let targetedDiv = document.getElementById(targetedID);
+  let newParagraph = document.createElement("p");
+  newParagraph.textContent = text;
+  newParagraph.className = "answer_color";
+  targetedDiv.appendChild(newParagraph);
+};
 
 //   names.forEach((name) => {
 //     return addParagraph("exercise11", `Hi! My name is ${name}`);
@@ -102,15 +101,16 @@ let names = ["Alex", "Sam", "John", "Lucia", "Marco", "Kristina"];
 //   array.forEach( name => {
 //     name.toLowerCase().includes('s') ? console.log(`${name} contains letter S ✅`): console.log(`${name} does NOT contain letter S ❌`)
 //   })
-  
+
 // }
 // logNamesWithLetter(names);
 
 // exercise 16
-let logNamesWithLetter = (array) => {
-  array.forEach( name => {
-    name.toLowerCase().includes('s') ? console.log(`${name} contains letter S ✅`): console.log(`${name} does NOT contain letter S ❌`)
-  })
-  
-}
-logNamesWithLetter(names);
+let logNamesWithLetter = (array, letter) => {
+  array.forEach((name) => {
+    name.toLowerCase().includes(letter)
+      ? addParagraph("exercise16", `${name} contains letter ${letter} ✅`) 
+      : addParagraph("exercise16", `${name} does NOT contain letter ${letter} ❌`);
+  });
+};
+logNamesWithLetter(names, "a");
