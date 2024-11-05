@@ -68,3 +68,49 @@ let names = ["Alex", "Sam", "John", "Lucia", "Marco", "Kristina"];
 // });
 
 // exercise 11
+// exercise 12
+//  let addParagraph = (targetedID, text) => {
+//     let targetedDiv = document.getElementById(targetedID);
+//     let newParagraph = document.createElement("p");
+//     newParagraph.textContent = text;
+//     newParagraph.className = "answer_color";
+//     targetedDiv.appendChild(newParagraph);
+//   };
+
+//   names.forEach((name) => {
+//     return addParagraph("exercise11", `Hi! My name is ${name}`);
+//   });
+
+// exercise 13
+// let namesUpperCase = () => {
+//   names.forEach((name) => {
+//     console.log(name.toUpperCase());
+//   });
+// }
+// namesUpperCase();
+
+// exercise 14
+// let lengthOfNames = () => {
+//   names.forEach((name) => {
+//     console.log(name.length);
+//   });
+// }
+// lengthOfNames();
+
+// exercise 15
+// let logNamesWithLetter = (array) => {
+//   array.forEach( name => {
+//     name.toLowerCase().includes('s') ? console.log(`${name} contains letter S ✅`): console.log(`${name} does NOT contain letter S ❌`)
+//   })
+  
+// }
+// logNamesWithLetter(names);
+
+// exercise 16
+let logNamesWithLetter = (array) => {
+  array.forEach( name => {
+    name.toLowerCase().includes('s') ? console.log(`${name} contains letter S ✅`): console.log(`${name} does NOT contain letter S ❌`)
+  })
+  
+}
+logNamesWithLetter(names);
