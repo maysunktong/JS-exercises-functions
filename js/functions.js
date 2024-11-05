@@ -32,35 +32,39 @@ let names = ["Alex", "Sam", "John", "Lucia", "Marco", "Kristina"];
 // let fullName = (name = "Alex", lastName = `${name}sson`) => {
 //   return `Hi! My name is ${name} ${lastName}`;
 // };
-// console.log(fullName("May", "Meow"));
+// console.log(fullName());
 
 // exercise 6
-
 // let addParagraph = () => {
 //   let exercise6 = document.getElementById("exercise6");
 //   let newParagraph = document.createElement("p");
 //   newParagraph.textContent = "Here I am!";
-//   newParagraph.className = "exercise_answer";
+//   newParagraph.className = "answer_color";
 //   exercise6.appendChild(newParagraph);
 // }
 // addParagraph();
 
 // exercise 7
-// let addParagraph = (text) => {
-//   let exercise7 = document.getElementById("exercise7");
+// let addParagraph = (targetedID, text) => {
+//   let targetedDiv = document.getElementById(targetedID);
 //   let newParagraph = document.createElement("p");
 //   newParagraph.textContent = text;
-//   newParagraph.className = "exercise_answer";
-//   exercise7.appendChild(newParagraph);
+//   newParagraph.className = "answer_color";
+//   targetedDiv.appendChild(newParagraph);
 // }
-// addParagraph("Hey there! 😊");
+// addParagraph("exercise7", "Here I am!");
 
-// exercise 8
-// let addParagraph = (text) => {
-//     let exercise6 = document.getElementById("exercise7");
-//     let newParagraph = document.createElement("p");
-//     newParagraph.textContent = text;
-//     newParagraph.className = "exercise_answer";
-//     exercise6.appendChild(newParagraph);
-//   }
-//   addParagraph("Hey there! 😊");
+// exercise 8 (run exercise 5 first)
+// addParagraph("exercise8", fullName("May", "Yeah"));
+// addParagraph("exercise8", fullName("May"));
+// addParagraph("exercise8", fullName());
+
+// exercise 9 
+// names.forEach(name => console.log(name));
+
+// exercise 10 (run exercise 2 first)
+// names.forEach(namePrint => {
+//   console.log(`Hi! My name is ${namePrint}`);
+// });
+
+// exercise 11

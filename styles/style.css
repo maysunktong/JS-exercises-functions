@@ -24,6 +24,6 @@ section {
   padding: 24px;
 }
 
-.exercise_answer {
-  color: yellow;
+.answer_color {
+  color: yellow;  
 }
